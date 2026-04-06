@@ -1,0 +1,58 @@
+{
+  "name": "opentabs-plugin-airbase",
+  "description": "OpenTabs plugin for Airbase",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/adapter.iife.js",
+  "license": "MIT",
+  "keywords": [
+    "opentabs-plugin",
+    "opentabs",
+    "mcp",
+    "airbase",
+    "spend-management"
+  ],
+  "opentabs": {
+    "displayName": "Airbase",
+    "description": "OpenTabs plugin for Airbase",
+    "homepage": "https://dashboard.airbase.io",
+    "urlPatterns": [
+      "*://*.airbase.io/*"
+    ],
+    "iconSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 56 56\"> <path fill=\"#FF6448\" d=\"M23.2,56L1.6,37.8V6l21.8,18.3L54.4,0v31.5L23.2,56zm0.2-11l22.4-17.6v-9.8L23.2,35.4l-13-10.9v9.5L23.4,45z\" /> </svg>",
+    "iconDarkSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 56 56\"> <path fill=\"#FF6448\" d=\"M23.2,56L1.6,37.8V6l21.8,18.3L54.4,0v31.5L23.2,56zm0.2-11l22.4-17.6v-9.8L23.2,35.4l-13-10.9v9.5L23.4,45z\" /> </svg>"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && opentabs-plugin build",
+    "dev": "tsc --watch --preserveWatchOutput & opentabs-plugin build --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "biome lint src/",
+    "lint:fix": "biome lint --fix src/",
+    "format:check": "biome format src/",
+    "format": "biome format --write src/",
+    "check": "npm run build && npm run type-check && npm run lint && npm run format:check"
+  },
+  "peerDependencies": {
+    "zod": "^4.0.0"
+  },
+  "dependencies": {
+    "@opentabs-dev/plugin-sdk": "^0.0.89"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.5",
+    "@opentabs-dev/plugin-tools": "^0.0.89",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3",
+    "zod": "^4.0.0"
+  }
+}

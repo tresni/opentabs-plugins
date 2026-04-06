@@ -4,8 +4,7 @@
     "includes": [
       "**",
       "!**/dist",
-      "!**/*.tsbuildinfo",
-      "!**/node_modules"
+      "!**/*.tsbuildinfo"
     ]
   },
   "formatter": {
