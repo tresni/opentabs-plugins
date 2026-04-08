@@ -10,7 +10,7 @@ import { listTransactions } from './tools/list-transactions.js';
 import type { ToolDefinition } from '@opentabs-dev/plugin-sdk';
 
 class ChasePlugin extends OpenTabsPlugin {
-  readonly name = 'chase';
+  readonly name = 'tresni-chase';
   readonly description = 'Access Chase accounts and transactions';
   override readonly displayName = 'Chase';
   readonly urlPatterns = ['*://*.chase.com/*'];

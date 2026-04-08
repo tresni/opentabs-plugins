@@ -35,7 +35,7 @@ import { listComments } from './tools/list-comments.js';
 import { deleteComment } from './tools/delete-comment.js';
 
 class AirbasePlugin extends OpenTabsPlugin {
-  readonly name = 'airbase';
+  readonly name = 'tresni-airbase';
   readonly description = 'OpenTabs plugin for Airbase';
   override readonly displayName = 'Airbase';
   override readonly homepage = 'https://dashboard.airbase.io';
