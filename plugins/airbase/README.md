@@ -5,13 +5,13 @@ OpenTabs plugin for Airbase — gives AI agents access to Airbase through your a
 ## Install
 
 ```bash
-opentabs plugin install airbase
+opentabs plugin install @tresni/opentabs-plugin-airbase
 ```
 
 Or install globally via npm:
 
 ```bash
-npm install -g opentabs-plugin-airbase
+npm install -g @tresni/opentabs-plugin-airbase
 ```
 
 ## Setup

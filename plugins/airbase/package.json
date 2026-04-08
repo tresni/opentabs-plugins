@@ -1,10 +1,20 @@
 {
-  "name": "opentabs-plugin-airbase",
+  "name": "@tresni/opentabs-plugin-airbase",
   "description": "OpenTabs plugin for Airbase",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/adapter.iife.js",
   "license": "MIT",
+  "author": "Brian Hartvigsen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tresni/opentabs-plugins.git",
+    "directory": "plugins/airbase"
+  },
+  "bugs": {
+    "url": "https://github.com/tresni/opentabs-plugins/issues"
+  },
+  "homepage": "https://github.com/tresni/opentabs-plugins/tree/main/plugins/airbase#readme",
   "keywords": [
     "opentabs-plugin",
     "opentabs",
@@ -34,6 +44,7 @@
   ],
   "scripts": {
     "build": "tsc && opentabs-plugin build",
+    "prepublishOnly": "npm run build && npm run type-check",
     "dev": "tsc --watch --preserveWatchOutput & opentabs-plugin build --watch",
     "type-check": "tsc --noEmit",
     "lint": "biome lint src/",

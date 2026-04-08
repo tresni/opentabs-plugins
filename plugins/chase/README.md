@@ -5,13 +5,13 @@ OpenTabs plugin for Chase — gives AI agents access to Chase through your authe
 ## Install
 
 ```bash
-opentabs plugin install chase
+opentabs plugin install @tresni/opentabs-plugin-chase
 ```
 
 Or install globally via npm:
 
 ```bash
-npm install -g opentabs-plugin-chase
+npm install -g @tresni/opentabs-plugin-chase
 ```
 
 ## Setup
