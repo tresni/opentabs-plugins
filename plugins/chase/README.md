@@ -19,20 +19,12 @@ npm install -g opentabs-plugin-chase
 1. Open [chase.com](https://chase.com) in Chrome and log in
 2. Open the OpenTabs side panel — the Chase plugin should appear as **ready**
 
-## Tools
-
-<!-- TODO: Replace this section with the actual tool table after implementation.
-Use this format — one table per group, with Read/Write classification:
-
-### Group Name (count)
+## Tools (2)
 
 | Tool | Description | Type |
 |---|---|---|
-| `tool_name` | What the tool does | Read or Write |
-
--->
-
-_No tools implemented yet._
+| `list_accounts` | List all Chase accounts with balances and payment info | Read |
+| `list_transactions` | List transactions for a Chase account, with optional date range and pagination | Read |
 
 ## How It Works
 
