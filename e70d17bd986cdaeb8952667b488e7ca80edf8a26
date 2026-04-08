@@ -1,0 +1,25 @@
+plugins/chase/src/index.ts
+  78931941de35dee6 13
+plugins/airbase/src/index.ts
+  78931941de35dee6 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.6",
+  "base_commit_sha": "e70d17bd986cdaeb8952667b488e7ca80edf8a26",
+  "prompts": {
+    "78931941de35dee6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3d29ba5e-c8e3-4f79-8b31-cb12d51be699",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Brian Hartvigsen",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 2,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
